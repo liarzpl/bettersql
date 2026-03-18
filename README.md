@@ -392,43 +392,7 @@ int main() {
 
 ## Contribution
 
-**Reporting Bugs**
-
-- Check the Issues: Before opening a new issue, please search the existing ones to see if the bug has already been reported.
-
-- Be Specific: Describe the steps to reproduce the bug, the expected behavior, and what actually happened.
-
-- Environment: Include your compiler version (GCC, Clang, MSVC) and the version of sqlite3 you are using.
-
-**Suggesting Enhancements**
-
-- Open an issue with the tag enhancement.
-
-- Explain why this feature would be useful for most users.
-
-- If it’s a major change (like adding a new storage backend), let’s discuss the design before you start coding.
-
-**Pull Requests**
-
-- Fork the repository and create your branch from main.
-
-- Follow the style: Match the existing coding style (LLVM/Clang-Format).
-
-- Header-Only: Remember that this is a header-only library. Keep all logic within `bettersql.hpp` or internal headers if necessary.
-
-- Modern C++: Use C++17 features where appropriate. Avoid raw pointers unless interacting directly with the sqlite3 C API.
-
-- Update Documentation: If you add a function, update the examples in the `README.md`.
-
-**Coding Standards**
-
-- To maintain code quality, please keep these rules in mind:
-
-- RAII is Key: Ensure all SQLite resources (statements, database handles) are properly managed via constructors and destructors.
-
-- No Raw `sqlite3*` exposure: Users should ideally not need to touch the C API directly unless they use `get_raw_stmt()`.
-
-- Templates: Use `std::enable_if_t` or `if constexpr` to keep the API flexible but safe.
+Thank you for your interest in contributing to **BetterSql**! All contributions are welcome. See CONTRIBUTING.md for more info.
 
 ## License
 
